@@ -3,11 +3,11 @@ def log_calls(text):
     def dec(func):
         def wrp(*args):
             result = func(*args) 
-            file = open('text.txt', 'a')
+            file = open('text.txt', 'a', encoding='utf-8') # выводились нечитаемые символы пришлось добавить кодировку
             file.write('priwet')
             file.write("[" + str(datetime.now()) + "] ")
-            #file.write("функция  " + func.__name__ + " ") выводит какие то вопросы 
-            #file.write("аргументы  " + str(args) + "\n") тоже самое 
+            file.write("функция  " + func.__name__ + " ")
+            file.write("аргументы  " + str(args) + "\n")  
 
 
 
