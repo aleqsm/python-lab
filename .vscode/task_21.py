@@ -9,7 +9,7 @@ def timing(func):
         return result
     return wrapper
 
-@timing
+@timing()
 def func_1():
     test = input("ввод")
     print(f'{test}\n' * 52)

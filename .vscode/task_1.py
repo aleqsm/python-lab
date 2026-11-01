@@ -1,6 +1,0 @@
-fio = input("введите ваше фио"'\n')
-#probel_1 = fio.find(' ')
-#print(probel_1)
-last_name,first_name, otchestvo = fio.split()
-#print(last_name,'\n', first_name,'\n', otchestvo)
-print(last_name.title()+' '+first_name[0].upper()+'.'+otchestvo[0].upper())

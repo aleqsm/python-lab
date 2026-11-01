@@ -5,7 +5,7 @@ def cache(func):
             return dict_1[args]
         dict_1[args] = func(*args)  
     return wrp
-@cache
+@cache()
 def keshic():
     print("priwet")
 keshic()  
